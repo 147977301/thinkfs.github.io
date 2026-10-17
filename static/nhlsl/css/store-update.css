@@ -179,5 +179,21 @@
 .ui-notice{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);max-width:calc(100vw - 32px);background:#163d2b;color:#fff;padding:12px 18px;border-radius:12px;z-index:9999;box-shadow:0 5px 25px #0002;font-size:14px;line-height:1.6}
 .ui-notice[hidden]{display:none}
 .product-return-links{background:#f0f8f3;border-radius:10px;padding:12px;font-size:13px}
+/* Keep payment dialogs within the mobile viewport and scroll their contents. */
+.modal-overlay{padding:12px;overflow:hidden;overscroll-behavior:none}
+.modal-overlay.active{align-items:center;justify-content:center}
+.modal-content{display:flex;flex-direction:column;width:100%;max-width:900px;min-width:0;max-height:calc(100vh - 24px);max-height:calc(100dvh - 24px);margin:0;overflow:hidden;transform:none}
+.modal-overlay.active .modal-content{transform:none}
+.modal-header{flex:0 0 auto;min-width:0}
+.modal-title{min-width:0;overflow-wrap:anywhere}
+.close-btn{flex-shrink:0}
+.modal-body{min-height:0;min-width:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior-y:contain;-webkit-overflow-scrolling:touch;grid-template-columns:minmax(0,1fr) minmax(0,1fr);touch-action:pan-y}
+.modal-body>*{min-width:0;max-width:100%}
+.modal-body .summary-value,.modal-body .address-value{min-width:0;overflow-wrap:anywhere;word-break:break-word}
+.modal-body .summary-row{min-width:0}
+.modal-body .qr-section{min-width:0;max-width:100%;padding:12px 0}
+.modal-body .qr-code{max-width:100%;height:auto;aspect-ratio:1}
+.modal-body .qr-code canvas{display:block;max-width:100%;height:auto!important}
+@media(max-width:768px){.modal-overlay .modal-content{width:100%;border-radius:18px}.modal-overlay .modal-body{grid-template-columns:minmax(0,1fr);gap:16px;padding:14px}.modal-header{padding:14px}.modal-body .order-summary{padding:14px}.modal-body .countdown-section{margin-bottom:14px;padding:12px}.modal-body .address-section{padding:12px}.modal-body .address-value{padding-right:0;margin-bottom:10px}.modal-body .copy-btn{position:static;transform:none;display:inline-flex}.modal-body .summary-label{font-size:12px}.modal-body .summary-value{font-size:13px}}
 .purchase-options .email-hint{align-items:flex-start}
 @media(max-width:768px){.home-guide{padding:18px;margin:22px 0 30px}.home-guide h2{font-size:19px}.home-guide p{font-size:14px}.delivery-note{padding:12px}.delivery-note p{font-size:12px}.modal-content{width:94%}.modal-body{padding:16px}.modal-header{padding:16px}.modal-title{font-size:18px}.qr-code{display:flex;width:210px;height:210px}.product-layout .email-hint{font-size:11px;line-height:1.6}.policy-box p{font-size:14px;line-height:1.9}}
