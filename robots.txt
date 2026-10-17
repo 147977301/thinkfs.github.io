@@ -1,4 +1,4 @@
-User-Agent: *
+User-agent: *
 Allow: /
 
-Sitemap: https://www.thinkfsi.com/sitemap.xml
+Sitemap: https://thinkfsi.com/sitemap.xml
