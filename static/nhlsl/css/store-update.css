@@ -144,11 +144,11 @@
  .product-layout .option-title{font-size:18px;margin:0 0 2px;gap:8px}
  .product-layout .form-group{display:grid;grid-template-columns:60px minmax(0,1fr);gap:5px 9px;align-items:center;margin:0}
  .product-layout .form-label{font-size:12px;margin:0}
- .product-layout .email-input{padding:10px 12px;border-radius:10px;min-width:0;height:42px;font-size:14px}
+ .product-layout .email-input{padding:10px 12px;border-radius:10px;min-width:0;height:42px;font-size:16px}
  .product-layout .email-hint{grid-column:2;font-size:10px;margin-top:0;line-height:1.4;gap:4px}
  .product-layout .quantity-selector{max-width:140px;border-radius:10px}
  .product-layout .quantity-btn{width:38px;height:38px}
- .product-layout .quantity-input{height:38px;font-size:14px;min-width:42px;width:42px}
+ .product-layout .quantity-input{height:38px;font-size:16px;min-width:42px;width:42px}
  .product-layout .payment-label{font-size:12px;margin-bottom:7px}
  .product-layout .total-price{padding:10px 12px;border-radius:12px}
  .product-layout .total-label{font-size:12px;gap:5px}
